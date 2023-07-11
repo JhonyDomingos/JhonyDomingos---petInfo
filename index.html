@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR ">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/styles/globalStyles.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <title>PetInfo</title>
+  </head>
+  <body>
+    <section class="spinner hidden"></section>
+    <main class="container">
+      <section class="petInfo__container">
+        <section class="petInfo__text-box">
+          <h1 class="petInfo__text-box--title">Petinfo</h1>
+          <h2 class="petInfo__text-box--subtitle">
+            <span>Amor</span> e <span>carinho</span> por meio do conhecimento
+          </h2>
+          <p class="petInfo__text-box--text">
+            Todas as informações para melhorar a vida do seu pet em um só lugar
+          </p>
+          <img
+            class="petInfo__text-box--img"
+            src="./src/assets/img/pet group.svg"
+            alt="pets fotos collections"
+            title="pets fotos collections"
+          />
+        </section>
+      </section>
+      <section class="form__card">
+        <h3 class="form__card--title">Loguin</h3>
+        <form class="input-group">
+          <label for="email" class="input-group__label--content"> Email </label>
+          <input
+            class="input-group__input"
+            type="email"
+            name="email"
+            autocomplete="on"
+            placeholder="Digite seu nome "
+          />
+
+          <label for="password" class="input-group__label--content">
+            Senha
+          </label>
+          <input
+            class="input-group__input"
+            type="password"
+            name="password"
+            autocomplete="on"
+            placeholder="Digite sua senha"
+          />
+          <button class="input-group--login-btn" type="submit">Acessar</button>
+        </form>
+        <section class="form__register-card">
+          <p class="form__register-card--text">Ainda não possui conta?</p>
+          <p class="form__register-card--sub-text">
+            Clicando no botão abaixo, você pode se cadastrar rapidamente
+          </p>
+          <button class="form__register-card--btn" type="button">
+            Cadastrar
+          </button>
+        </section>
+      </section>
+    </main>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <script type="module" src="./src/scripts/index.js"></script>
+  </body>  
+</html>

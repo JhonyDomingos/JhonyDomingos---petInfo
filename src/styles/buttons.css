@@ -41,3 +41,8 @@ button {
 .alert__button:hover {
   background-color: var(--alert200);
 }
+
+.posts-user-control-delete-btn {
+  color: var(--gray300);
+}
+

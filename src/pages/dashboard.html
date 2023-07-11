@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR ">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Inter&display=swap"
+            rel="stylesheet" />
+        <!-- CSS -->
+        <link rel="stylesheet" href="../styles/globalStyles.css" />
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+        <title>PetInfo - Feed</title>
+    </head>
+    <body>
+        <main class="dashboard-container">
+            <header class="header">
+                <h1 class="header--title">PetInfo</h1>   
+            </header>
+            <h1 class="dashboard-container--title">Feed</h1>
+            <section class="dashboard-container__posts">
+                
+            </section>
+        </main>
+        <dialog class="modal__controler-show-post"></dialog> 
+
+        <dialog class="modalDelete">          
+          <div class="modalDelete__container">
+            <div class="modalDelete__header">
+              <h2>Confirmar exlusão</h2>
+              <button type="button" class="close-Modal close-cancel__button" >X</button>
+            </div >
+            <h2>Tem ceteza que deseja excluir esse post?</h2>
+            <span>Essa ação não poderá ser desfeita, então pedimos que tenha cautela anters de concluir </span>
+            <div class="modalDelete__buttons">
+              <button class=" close-Modal close-cancel__button" type="button">Cancelar</button>
+              <button class="alert__button deleteButton" type="button">Sim,excluir esse post</button>
+            </div>
+          </div>
+        </dialog>               
+        <dialog class="update-modal__controller">
+            <section class="update-modal__container">
+              <div class="post-modal__header">
+                <h2 class="post-modal__header--title">Atualizar post</h2>
+                <button class="closeModal close-cancel__button ">X</button>
+              </div>
+              <form class="modal-form">
+                <section class="modal-form__input-group">
+                  <label for="title" class="modal-form__input-group-text">Novo título do post</label>
+                  <input 
+                  class="update__modal-form__input-group-input" 
+                  type="text" 
+                  name="title" 
+                  id="title" />
+                  <label for="content" class="modal-form__input-group-text">Novo conteúdo do post</label>
+                  <textarea class="update__modal-form__input-group-text-area" name="content"></textarea>
+                </section>
+                <section class="modal-form__buttons-container">
+                  <button class="closeModal close-cancel__button " type="button">Cancelar</button>
+                  <button class="confirm__button update"  type="submit">Atualizar</button>
+                </section>
+              </form>
+            </section>
+          </dialog>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script> 
+        <script type="module" src="../scripts/dashboard.js"></script>
+    </body>
+</html>

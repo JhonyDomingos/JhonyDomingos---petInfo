@@ -7,6 +7,8 @@ footer, header, nav, output, section, summary {
 	padding: 0;
 	border: 0;
     box-sizing: border-box;
+    
+	
 }
 
 ol, ul {

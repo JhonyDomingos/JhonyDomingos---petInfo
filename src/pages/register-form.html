@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR ">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/globalStyles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <title>PetInfo - Cadastro</title>
+  </head>
+
+  <body>
+    <section class="spinner hidden"></section>
+    <main class="container">
+        <section class="form__card">
+            <div class="form__card__header">
+                <h3 class="form__card--title">Cadastro</h3>
+                <button class="form__card--redirect">Voltar para o loguin</button>
+            </div>
+            <form class="input-group">
+                <label for="username" class="input-group__label--content"> Usuário </label>
+                <input
+                  class="input-group__input"
+                  type="text"
+                  name="username"
+                  id="username"
+                  placeholder=" Digite seu usuário aqui "
+                  autocomplete="on"
+                  
+                />
+      
+              <label for="email" class="input-group__label--content"> Email </label>
+              <input
+                class="input-group__input"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Digite seu email aqui "
+                autocomplete="on"
+              />
+              
+              <label for="avatar" class="input-group__label--content"> Link para foto de perfil </label>
+              <input
+                class="input-group__input"
+                type="text"
+                name="avatar"
+                id="avatar"
+                placeholder=" Insira o link aqui "
+                autocomplete="on"
+              />          
+              <label for="password" class="input-group__label--content">
+                Senha
+              </label>
+              <input
+                class="input-group__input"
+                type="password"
+                name="password"
+                id="password"                
+                placeholder="Digite sua senha "
+                autocomplete="on"
+              />
+    
+              <button class="input-group--signup-btn" type="submit">Cadastrar</button>
+              <button type="button" class="form__card--redirect">Voltar para o loguin</button>
+            </form>            
+          </section>
+                    
+      <section class="petInfo__container">
+        <section class="petInfo__text-box">
+          <h1 class="petInfo__text-box--title">Petinfo</h1>
+          <h2 class="petInfo__text-box--subtitle">
+            <span>Ooooooba!</span>
+          </h2>
+          <p class="petInfo__text-box--text">
+            Agora vamos poder contribuir para o bem estar do seu pet por meio do conhecimento
+          </p>
+          <img
+            class="petInfo__text-box--img"
+            src="../assets/img/Group 18.png"
+            alt="pets fotos collections"
+            title="pets fotos collections"
+          />
+        </section>
+      </section>
+
+    </main>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>  
+    <script type="module" src="../scripts/signup.js"></script>
+  </body>
+</html>

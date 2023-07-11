@@ -1,3 +1,12 @@
+@import url('reset.css');
+@import url('buttons.css');
+@import url('index.css');
+@import url('register.css');
+@import url('header.css');
+@import url('dashboard.css');
+@import url('modal.css');
+@import url('toasts.css');
+
 :root {
   --brand100: hsl(230, 57%, 50%);
   --brand200: hsl(230, 68%, 54%);
@@ -13,15 +22,47 @@
   --alert100: hsl(349, 57%, 50%);
   --alert200: hsl(349, 69%, 55%);
   --sucess100: hsl(162, 88%, 26%);
+  --font-1:2rem;
+  --font-2:1.25rem;
+  --font-3: 1rem;
+  --font-4:0.875rem;
+  --font-weight-1:600;
+  --font-weight-2:500;  
+  --font-weight-3:400;
+
+  --default-radius:0.25rem;
+  --default-line-height:150%;
+  
+  --sucess :hsla(162, 88%, 26%, 1); 
+  --fail : #df1545; 
 }
 
-body {
-  font-family: "Inter, sans-serif";
+body {  
+  max-width:100vw; 
+  min-height: 100vh;
+  font-family: 'IBM Plex Sans' , sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem 0rem 2rem; 
+}
+
+img {
+  max-width: 100%;
 }
 
 .container {
   max-width: 50rem;
+  width: 100%;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+
+  gap: 2rem;
+ 
 }
 
 dialog {
